@@ -1,6 +1,6 @@
 ## Link of repositories 
 #### For obtainium FOSS apk store 
->>>>>>>>>>>> FOSS: free & open source softwares.
+>>>>>>>>>>>> FOSS: free & open source software.
 >
 > Get Android App Updates **Directly** From the **Source**. 
 >
