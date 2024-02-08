@@ -1,6 +1,6 @@
 ## Link of repositories 
 #### For obtainium FOSS apk store 
->>>>>>>>>>>> FOSS: free & open source software.
+>>>>> FOSS: free & open source software.
 >
 > Get Android App Updates **Directly** From the **Source**. 
 >
@@ -113,39 +113,35 @@
 >
 >
 >
-> ### **[Be curious](https://t.me/F_NiREvil) 🤍🪐**
+> **[Be curious](https://t.me/F_NiREvil) 🤍🪐**
 
 
 
-## Currently supported App sources:
+#### Currently supported App sources:
 
-- [ ] Open Source - General:
- - GitHub
- - GitLab
- - Codeberg
- - F-Droid
- - IzzyOnDroid
- - Third Party F- Repos
- - SourceForge
- - SourceHut
+- Open Source - General:
+   - GitHub
+   - GitLab
+   - Codeberg
+   - F-Droid
+   - IzzyOnDroid
 
+ - Third Party F- Repo
+    - SourceForge
+    - SourceHut
+   - APKMirror
+   - APKPure
+   - Huawei AppGallery
+   - Jenkins Jobs
 
-- [ ] Other - General:
- - APKMirror
- - APKPure
- - Huawei AppGallery
- - Jenkins Jobs
+- Open Source - App-Specific:
+   - Mullvad
+   - Signal
+   - VLC
+   - Steam
 
-
- - [ ] Open Source - App-Specific:
- - Mullvad
- - Signal
- - VLC
- - Steam
-
-
- - [ ] Other - App-Specific:
- - Telegram App
- - Neutron Code
- - HTML-Fallback
- - [Obtainium Wiki](https://github.com/ImranR98/Obtainium/wiki)
+- Other - App-Specific:
+   - Telegram App
+   - Neutron Code
+   - HTML-Fallback
+   - [Obtainium Wiki](https://github.com/ImranR98/Obtainium/wiki)
