@@ -1,6 +1,11 @@
+
 This is intended as a quick reference and showcase. For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
 
-Note that there is also a [Cheatsheet specific to Markdown Here](./Markdown-Here-Cheatsheet) if that's what you're looking for. You can also check out [more Markdown tools](./Other-Markdown-Tools).
+This cheatsheet is specifically *Markdown Here's* version of Github-flavored Markdown. This differs slightly in styling and syntax from what Github uses, so what you see below might vary a little from what you get in a *Markdown Here* email, but it should be pretty close.
+
+You can play around with Markdown on our [live demo page](http://www.markdown-here.com/livedemo.html).
+
+(If you're not a Markdown Here user, check out the [Markdown Cheatsheet](./Markdown-Cheatsheet) that is not specific to MDH. But, really, you should also use Markdown Here, because it's awesome. http://markdown-here.com)
 
 ##### Table of Contents  
 [Headers](#headers)  
@@ -9,13 +14,13 @@ Note that there is also a [Cheatsheet specific to Markdown Here](./Markdown-Here
 [Links](#links)  
 [Images](#images)  
 [Code and Syntax Highlighting](#code)  
-[Footnotes](#footnotes)  
 [Tables](#tables)  
 [Blockquotes](#blockquotes)  
 [Inline HTML](#html)  
 [Horizontal Rule](#hr)  
 [Line Breaks](#lines)  
 [YouTube Videos](#videos)  
+[TeX Mathematical Formulae](#tex)  
 [Link of repositories](#Link-of-repositories)
 
 <a name="headers"/>
@@ -81,21 +86,15 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 ## Lists
 
-(In this example, leading and trailing spaces are shown with with dots: ⋅)
-
 ```no-highlight
 1. First ordered list item
 2. Another item
-⋅⋅* Unordered sub-list. 
+  * Unordered sub-list. 
 1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
-
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+  1. Ordered sub-list
+4. And another item.  
+   
+   Some text that should be aligned with the above item.
 
 * Unordered list can use asterisks
 - Or minuses
@@ -107,13 +106,9 @@ Strikethrough uses two tildes. ~~Scratch this.~~
   * Unordered sub-list. 
 1. Actual numbers don't matter, just that it's a number
   1. Ordered sub-list
-4. And another item.
-
-   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-
-   To have a line break without a paragraph, you will need to use two trailing spaces.  
-   Note that this line is separate, but within the same paragraph.  
-   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+4. And another item.  
+   
+   Some text that should be aligned with the above item.
 
 * Unordered list can use asterisks
 - Or minuses
@@ -128,15 +123,11 @@ There are two ways to create links.
 ```no-highlight
 [I'm an inline-style link](https://www.google.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
 [I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
 
 [You can use numbers for reference-style link definitions][1]
 
-Or leave it empty and use the [link text itself].
+Or leave it empty and use the [link text itself]
 
 URLs and URLs in angle brackets will automatically get turned into links. 
 http://www.example.com or <http://www.example.com> and sometimes 
@@ -151,15 +142,11 @@ Some text to show that the reference links can follow later.
 
 [I'm an inline-style link](https://www.google.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
 [I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
 
 [You can use numbers for reference-style link definitions][1]
 
-Or leave it empty and use the [link text itself].
+Or leave it empty and use the [link text itself]
 
 URLs and URLs in angle brackets will automatically get turned into links. 
 http://www.example.com or <http://www.example.com> and sometimes 
@@ -201,7 +188,7 @@ Reference-style:
 
 ## Code and Syntax Highlighting
 
-Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
+Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
 ```no-highlight
 Inline `code` has `back-ticks around` it.
@@ -244,31 +231,7 @@ No language indicated, so no syntax highlighting in Markdown Here (varies on Git
 But let's throw in a <b>tag</b>.
 ```
 
-
-<a name="footnotes"/>
-
-## Footnotes
-
-Footnotes aren't part of the core Markdown spec, but they [supported by GFM](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes).
-
-```no-highlight
-Here is a simple footnote[^1].
-
-A footnote can also have multiple lines[^2].  
-
-You can also use words, to fit your writing style more closely[^note].
-
-[^1]: My reference.
-[^2]: Every new line should be prefixed with 2 spaces.  
-  This allows you to have a footnote with multiple lines.
-[^note]:
-    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
-    This footnote also has been made with a different syntax using 4 spaces for new lines.
-```
-
-Renders to:
-
-![rendered footnotes](https://user-images.githubusercontent.com/425687/160298620-6046b90e-698c-43cb-8e00-5f5871a906ad.png)
+Again, to see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
 <a name="tables"/>
 
@@ -285,9 +248,7 @@ Colons can be used to align columns.
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
+The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
 
 Markdown | Less | Pretty
 --- | --- | ---
@@ -303,7 +264,7 @@ Colons can be used to align columns.
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-There must be at least 3 dashes separating each header cell. The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
 
 Markdown | Less | Pretty
 --- | --- | ---
@@ -432,14 +393,21 @@ Or, in pure Markdown, but losing the image sizing and border:
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 ```
 
-Referencing a bug by #bugID in your git commit links it to the slip. For example #1. 
+<a name="tex"/>
 
----
+## TeX Mathematical Formulae
 
-License: [CC-BY](https://creativecommons.org/licenses/by/3.0/)
+A full description of TeX math symbols is beyond the scope of this cheatsheet. Here's a [good reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics), and you can try stuff out on [CodeCogs](https://www.codecogs.com/latex/eqneditor.php). You can also play with formulae in the Markdown Here options page.
 
+Here are some examples to try out:
 
+```
+$-b \pm \sqrt{b^2 - 4ac} \over 2a$
+$x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}$
+$\forall x \in X, \quad \exists y \leq \epsilon$
+```
 
+The beginning and ending dollar signs (`$`) are the delimiters for the TeX markup.
 
 
 
