@@ -6,7 +6,7 @@ Make sure to checkout [README-Full.md](README-Full.md) for all common page eleme
 
 
 ---
-
+Full markdown [ex](https://www.markdownguide.org/hacks) and [ex2](https://www.markdownguide.org/basic-syntax/)
 
 ```diff
 + If you find this useful, please remember to ⭐ - Thanks!
