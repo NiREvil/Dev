@@ -2,14 +2,20 @@
 A collection of Github markdown tricks for writing kickass READMEs, Pull Requests & Comments.  
 Markdown is Github's version of dress code - Make your first impression count.
 
-Make sure to checkout [README-Full.md](README-Full.md) for all common page elements.
-
-
 ---
-Full markdown [ex](https://www.markdownguide.org/hacks) and [ex2](https://www.markdownguide.org/basic-syntax/)
+**Full markdown**
+> [ex](https://www.markdownguide.org/hacks) and [ex2](https://www.markdownguide.org/basic-syntax/)
+
+
+**Writing on GitHub**
+> [You can structure the information shared on GitHub with various formatting options](https://docs.github.com/en/get-started/writing-on-github).
+>
+> at the end Make sure to checkout [README-Full.md](README-Full.md) for all common page elements.
+
+
 
 ```diff
-+ If you find this useful, please remember to ⭐ - Thanks!
++ ⭐ - Thanks!
 ```
 
 ## What tricks can I use?
