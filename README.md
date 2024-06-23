@@ -12,22 +12,10 @@ Markdown is Github's version of dress code - Make your first impression count.
 >
 > at the end Make sure to checkout [README-Full.md](README-Full.md) for all common page elements.
 
-
-
-```diff
-+ ⭐ - Thanks!
-```
-
 ## What tricks can I use?
 READMEs offer support for:  
 👉 [Markdown](#markdown-tricks)  
 👉 [HTML](#html-tricks)
-
-Pull Requests & Comments offer support for:  
-👉 [Markdown](#markdown-tricks)
-
-## Contribution
-Missing a trick? feel free to make a [contribution](https://github.com/Olwiba/Kickass-markdown/edit/main/README.md).
 
 ## Markdown tricks
 
